@@ -8,11 +8,12 @@
 <script type="text/javascript">
 $(function() {
 	$("#btn").click(function() {
-		$.post("check.do",$("form").serialize(),function(da){
+		var all = $("form").serialize();
+		$.post("check.do",all,function(da){
 			if(da){
-				alert("验证成功，内容符合");
+				alert("验证成功");
 			}else{
-				alert("验证失败")
+				alert("验证失败，内容为空")
 			}
 		},"json");
 	});
@@ -42,7 +43,7 @@ $(function() {
 			<td><input type="text" name="email"></td>
 		</tr>
 		<tr>
-			<td>
+			<td colspan="100">
 				<input type="button" value="验证" id="btn">
 			</td>
 		</tr>
