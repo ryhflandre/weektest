@@ -13,7 +13,7 @@ $(function() {
 			if(da){
 				alert("验证成功");
 			}else{
-				alert("验证失败，内容为空")
+				alert("验证失败，内容为空,请检阅")
 			}
 		},"json");
 	});

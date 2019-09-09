@@ -33,7 +33,7 @@ public class StringController {
 			if (StringUtils.isEmail(email)) {
 				System.out.println("验证成功是一个邮箱号");
 			}else{
-				System.out.println("这不是一个邮箱");
+				System.out.println("这不是一个邮箱的");
 			}
 			return true;
 		}

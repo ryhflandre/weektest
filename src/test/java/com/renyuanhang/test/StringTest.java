@@ -32,5 +32,6 @@ public class StringTest {
 		}else{
 			System.out.println("这不是一个邮箱");
 		}
+		System.out.println();
 	}
 }

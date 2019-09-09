@@ -30,7 +30,6 @@ public class StringUtils {
 	}
 	
 	public static boolean isEmail(String email){
-		
 		return email.matches("^\\w+\\@\\w+\\.(com|cn)$");
 	}
 }
